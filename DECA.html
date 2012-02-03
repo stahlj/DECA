@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>DECA</title>
+<META NAME="DESCRIPTION" CONTENT="">
+<META NAME="KEYWORDS" CONTENT="">
+
+<script type="text/javascript">
+function chkcontrol(j) {
+var total=0;
+for(var i=0; i < document.form1.ckb.length; i++){
+if(document.form1.ckb[i].checked){
+total =total +1;}
+if(total > 2){
+alert("Please Select only two.")
+document.form1.ckb[j].checked = false ;
+return false;
+}
+}
+} </script>
+</head>
+<body bgcolor="ffffff">
+	<h1 ALIGN="CENTER" > <img src="DECAlogo.jpg" width="300" height="100"> </h1>
+	<hr width="95%" size="8" color=#000000 /><br>
+	<h2><u>List of Events</u></h2>
+	<strong>Select event from the list:</strong><br>
+	<form name=form1 method=post action=checkTEST.php>	
+		<select multiple="no">
+		<option>Advertising Design </option>
+		<option>Business Ethics </option>
+		<option>Business Law </option>
+		<option>Human Resource Management </option>
+		<option>Business-to-Business Marketing </option>
+		<option>Entrepreneurship </option>
+		<option>Financial Statement Analysis </option>
+		<option>Business Resource Management </option>
+		<option>International Marketing </option>
+		<option>Marketing Management </option>
+		<option>Professional Sales </option>
+		<option>Sales Management Meeting </option>
+		<option>Sports & Entertainment Marketing </option>
+		<option>Website Design </option>
+		<option>Culinary Arts </option>
+		<option>Criminal Justice </option>
+		<option>Accounting </option>
+		<option>Corporate Finance </option>
+		<option>Fashion Merchandising & Marketing </option>
+		<option>Hotel & Lodging </option>
+		<option>Restaurant & Food Service Management </option>
+		<option>Retail Management </option>
+		<option>Travel & Tourism </option>
+		</select><br>
+	<h2><u>Student Information</u></h2>
+	<strong>Input student's information below:<br></strong><br>
+	<!--<form name="survey" action=""
+	method="get">
+		Last Name
+		<input type="text" name="lastname">
+	&nbsp; &nbsp;
+		First Name
+		<input type="text" name="firstname">
+	&nbsp; &nbsp;
+		Middle Initial
+	<input type="text" name="middlename"><br>
+	<!--<input type="submit">
+	</form><br>-->
+	<?php
+	<form action="welcome.php" method="post">
+	Student #1: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #2: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #3: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #4: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #5: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #6: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #7: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #8: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #9: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #10: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #11: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	Student #12: &nbsp;
+		Last Name: <input type="text" name="lname" />&nbsp; &nbsp;
+		First name: <input type="text" name="fname" />&nbsp; &nbsp;
+		Middle Initial: <input type="text" name="initial" /><p>
+	</form>
+	<br></form></table><p>
+	<input type="submit" value="Submit Schedule" /><br><br>
+	<input type="submit" name="Print_Button" value="Print Schedule" onclick="printpage();" id="Print_Button" style="width:110px;" /> (Submit student schedule before printing.)
+	
+	</form> 	
+		
+</body>
+</html>	
